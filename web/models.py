@@ -7,3 +7,7 @@ class Expense(models.Model):
     date = models.DateTimeField()
     amount = models.BigIntegerField()
     user = models.ForeignKey(User, on_delete=models.CASCADE)
+
+
+class ModelTest(models.Model):
+    title = models.CharField(verbose_name='title', max_length=100)
